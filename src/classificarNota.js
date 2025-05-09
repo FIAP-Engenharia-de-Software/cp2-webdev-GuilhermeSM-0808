@@ -10,6 +10,15 @@
 
 function classificarNota(nota) {
   // TODO: implementar função
+  if (10 >= nota && nota >= 6){
+    return "Aprovado"
+  }
+  else if ( nota < 6 && nota >= 0){
+    return "Reprovado"
+  }
+  else{
+    return "Nota inválida"
+  }
 }
 
 //NÃO REMOVA O CÓDIGO ABAIXO

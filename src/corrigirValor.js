@@ -6,6 +6,12 @@
 
 function corrigirValor(valor) {
   // TODO: implementar função
+  if (isNaN(Number(valor))){
+    return "Valor inválido"
+  }
+  else{
+    return Number(valor)
+  }
 }
 
 //NÃO REMOVA O CÓDIGO ABAIXO

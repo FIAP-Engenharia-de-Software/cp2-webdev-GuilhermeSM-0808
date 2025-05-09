@@ -3,7 +3,12 @@
 // **Enunciado:**
 // A função abaixo tenta somar dois números, mas está sem nenhuma validação. Encontre e corrija os problemas para que a função funcione corretamente. Considere que o **parâmetro b pode ser opcional** e que, se não for fornecido, **deve ser considerado como 0**. Além disso, **a função não deve retornar valores de tipos inesperados (como NaN ou undefined)**, e deve tratar casos em que os **parâmetros não são números**, retornando a mensagem "Parâmetro inválido".
 
-function somar(a, b) {
+function somar(a, b = 0) {
+  if (isNaN(a) || isNaN(b) || a == null || b == null){
+    return "Parâmetro inválido"
+  }
+  a = Number(a)
+  b = Number(b)
   let resultado = a + b;
   return resultado;
 }
